@@ -1,7 +1,3 @@
-1 changed file with 22 additions and 0 deletions.
- 22  
-Jenkinsfile
-@@ -0,0 +1,22 @@
 pipeline {
     agent any
     stages {
