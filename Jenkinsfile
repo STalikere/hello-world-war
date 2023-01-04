@@ -12,6 +12,7 @@ pipeline {
                 sh 'mvn package'
             }
   }
+        
 //       stage('Deploy step') {
 //             steps {
 //                 sh 'sudo cp /var/lib/jenkins/${job_name}/hello-world-war-1.0.0.war /var/lib/tomcat9/webapps'      
