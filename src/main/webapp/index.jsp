@@ -1,9 +1,9 @@
 <html>
 <head>
-<title>Hello World!</title>
+<title>Assignment</title>
 </head>
 <body>
-	<h1>This is DevOps Class</h1>
+	<h1>Assignment was done. Thank you.</h1>
 	<p>
 		It is now
 		<%= new java.util.Date() %></p>
