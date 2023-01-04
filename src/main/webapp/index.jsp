@@ -3,7 +3,7 @@
 <title>Assignment</title>
 </head>
 <body>
-	<h1>Development Branch.</h1>
+	<h1>Development Branch Updated</h1>
 	<p>
 		It is now
 		<%= new java.util.Date() %></p>
