@@ -1,9 +1,9 @@
 <html>
 <head>
-<title>Hello World!</title>
+<title>Master and Slave</title>
 </head>
 <body>
-	<h1>Master Branch Webhook Testing</h1>
+	<h1>Master/Slave </h1>
 	<p>
 		It is now
 		<%= new java.util.Date() %></p>
