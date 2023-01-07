@@ -3,18 +3,19 @@ pipeline {
         label "Slave2"        
     }
     stages {
+        stage('install tomcat') {
+            steps {
+                sh 'chmod 755 ${WORKSPACE}/hello-world-war/TomcatScript'
+                sh '${WORKSPACE}/hello-world-war/TomcatScript'
+            }
+        }
         stage('clone') {
             steps {
+                restart
                 sh 'rm -rf hello-world-war'
                 sh 'git clone https://github.com/STalikere/hello-world-war.git'
             }
         }
-//         stage('install tomcat') {
-//             steps {
-//                 sh 'chmod 755 ${WORKSPACE}/hello-world-war/TomcatScript'
-//                 sh '${WORKSPACE}/hello-world-war/TomcatScript'
-//             }
-//         }
         stage('Build') {
             steps {
                 sh 'mvn package'
