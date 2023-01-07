@@ -11,7 +11,7 @@ pipeline {
         }
         stage('clone') {
             steps {
-                restart
+                sh 'restart'
                 sh 'rm -rf hello-world-war'
                 sh 'git clone https://github.com/STalikere/hello-world-war.git'
             }
