@@ -3,12 +3,12 @@ pipeline {
         label "Slave2"        
     }
     stages {
-        stage('install tomcat') {
-            steps {
-                sh 'chmod 755 ${WORKSPACE}/hello-world-war/TomcatScript'
-                sh '${WORKSPACE}/hello-world-war/TomcatScript'
-            }
-        }
+//         stage('install tomcat') {
+//             steps {
+//                 sh 'chmod 755 ${WORKSPACE}/hello-world-war/TomcatScript'
+//                 sh '${WORKSPACE}/hello-world-war/TomcatScript'
+//             }
+//         }
         stage('clone') {
             restart
             steps {
