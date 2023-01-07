@@ -4,10 +4,13 @@
 </head>
 <body>
 	<h1>Master/Slave </h1>
-	<p>
-		It is now
-		<%= new java.util.Date() %></p>
-	<p>
-		You are coming from 
-		<%= request.getRemoteAddr()  %></p>
+	<p>Pipelne created at Master</p>
+	<br/>
+	<p>Slave</p>
+	<ol>
+		<li>Tomcat Installation</li>
+		<li>Clone Repository</li>
+		<li>Build</li>
+		<li>Deploy</li>
+	</ol>	
 </body>
