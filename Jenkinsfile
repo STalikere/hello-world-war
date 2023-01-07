@@ -9,15 +9,14 @@ pipeline {
                 sh 'git clone https://github.com/STalikere/hello-world-war.git'
             }
         }
-        stage('install tomcat') {
-            steps {
-                sh 'chmod 755 ${WORKSPACE}/hello-world-war/TomcatScript'
-                sh '${WORKSPACE}/hello-world-war/TomcatScript'
-            }
-        }
+//         stage('install tomcat') {
+//             steps {
+//                 sh 'chmod 755 ${WORKSPACE}/hello-world-war/TomcatScript'
+//                 sh '${WORKSPACE}/hello-world-war/TomcatScript'
+//             }
+//         }
         stage('Build') {
             steps {
-                restart
                 sh 'mvn package'
             }
         }
