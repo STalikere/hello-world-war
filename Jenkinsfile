@@ -15,7 +15,7 @@ pipeline {
 //         }
         stage('Deploy') {
              steps {
-                 sh 'sudo docker run -d -p 8070:8080 tomcat-image'
+                 sh 'docker run -d -p 8070:8080 tomcat-image'
             }
         }
     }
