@@ -9,12 +9,13 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'mvn package'
+                sh 'sudo mvn clean package'
             }
         }
         stage('Deploy') {
              steps {
-                 sh 'sudo cp /${WORKSPACE}/target/hello-world-war-1.0.0.war /var/lib/tomcat9/webapps'
+                 
+                 sh 'sudo docker run -d -p 8070:8080 tomcat-image'
             }
         }
     }
